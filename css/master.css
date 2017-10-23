@@ -1,6 +1,20 @@
 body{
-  background-image: url("../images/topbackgrond.jpg");
-}
+      background-image: url('../images/background.jpg');
+    }
+.home{
+           text-align: justify ;
+           color: white;
+           background-color: #C8C8C8;
+           margin-top: 200px;
+           margin-left: 100px;
+           margin-right: 100px;
+           margin-bottom: 300px;
+       }
+          }
+.navbar{
+             display: block;
+             margin: 0px;0px;0px;0px;
+             }
 .navbar a {
     float: left;
     display: block;
@@ -13,7 +27,7 @@ body{
 
 /* Change the color of links on hover */
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #818181;
     color: black;
 }
 
