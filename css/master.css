@@ -1,16 +1,23 @@
 body{
       background-image: url('../images/background.jpg');
     }
-.home{
-           text-align: justify ;
-           color: white;
-           background-color: #C8C8C8;
-           margin-top: 200px;
-           margin-left: 100px;
-           margin-right: 100px;
-           margin-bottom: 300px;
-       }
-          }
+.content{
+                  color: white;
+                  text-align: center;
+                  background-color: black;
+                  margin-top: 120px;
+                  margin-left: 122px;
+                  margin-right: 120px;
+                  opacity:0.4;
+                  }
+.content:hover{
+  opacity: 0.8;
+  margin-left: 112px;
+  margin-right: 110px;
+  margin-top: 110px;
+  transition: 200ms;
+}
+.home
 .navbar{
              display: block;
              margin: 0px;0px;0px;0px;
@@ -30,9 +37,16 @@ body{
     background-color: #818181;
     color: black;
 }
-
 /* Add a color to the active/current link */
 .navbar a.active {
     background-color: #4CAF50;
     color: white;
+}
+.projects{
+  display: flex;
+  text-align: justify;
+
+}
+.mediahandle{
+  font-size: 5rem;
 }
