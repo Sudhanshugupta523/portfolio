@@ -2,29 +2,62 @@
 <html>
   <head>
     <title>Sudhanshu Gupta</title>
+    <link rel="icon" href="images/favicon.ico">
       <link href="css/master.css" type="text/css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--FONT AWESOME FOR NAVBAR ICONS-->
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"><!--DEVICON FOR ALL ICONS EXCEPT NAVBAR-->
+      <style media="screen">
+      .content{
+        font-size: 10px;
+        opacity: 0.5;
+      }
+      .contactmail{
+        align-content: left;
+      }
+      .content:hover{
+        opacity: 0.9;
+        margin-left: 112px;
+        margin-right: 110px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        transition: 200ms;
+      }
+      </style>
   </head>
   <body>
     <header>
 
       <div class="navbar" id="mynavbar">
         <a href="index.html"><i class="fa fa-home" ></i> Home</a>
-        <a  href="about.html"><i class="fa fa-user"></i> Personal life</a>
+        <a  href="skill.html"><i class="fa fa-user"></i> Skills</a>
         <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
         <a href="projects.html"><i class="fa fa-tasks"></i> Projects</a>
      </div>
    </header><br />
-   <div class="">
-
+   <div class="content">
+     <div class="mailcontact">
+        <center>
+     <form class="form" action="script/master.php" method="post">
+       <table>
+         <tr>
+           <td>Subject:-</td><td>
+             <input type="text" name="subject" placeholder="Subject" value="NO subject"></td></td>
+         </tr>
+       </table>
+       <label>Message:-<textarea name="message" rows="5" cols="100" required></textarea> </label>
+       <br>
+         <input type="submit"  value="Send">
+           </form>
+ </center>
    </div>
-      <div class="media-handles">
-      <i class="devicon-facebook-plain colored"></i>
-      <i class="devicon-github-plain colored"></i>
-      <i class="devicon-wordpress-plain colored"></i>
+       <div class="media-handles">
+      <a href="https://www.facebook.com/Itssid523" target="_blank"><img src="images/facebook.png" alt="facebook" width="100"></a>
+      <a href="https://www.instagram.com/gupta.sudhanshu/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram" width="100"></a>
+      <a href="https://github.com/Sudhanshugupta523" target="_blank"><img src="images/github.png" alt="github" width="100"></a>
     </div>
+  </div>
   </body>
 </html>
