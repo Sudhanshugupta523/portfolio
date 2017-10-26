@@ -4,10 +4,13 @@
     <title>Sudhanshu Gupta</title>
     <link rel="icon" href="images/favicon.ico">
       <link href="css/master.css" type="text/css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--FONT AWESOME FOR NAVBAR ICONS-->
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"><!--DEVICON FOR ALL ICONS EXCEPT NAVBAR-->
+      <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
       <style media="screen">
       .content{
         font-size: 10px;
@@ -26,6 +29,7 @@
         transition: 200ms;
       }
       </style>
+
   </head>
   <body>
     <header>
@@ -39,19 +43,29 @@
    </header><br />
    <div class="content">
      <div class="mailcontact">
-        <center>
-     <form class="form" action="script/master.php" method="post">
-       <table>
-         <tr>
-           <td>Subject:-</td><td>
-             <input type="text" name="subject" placeholder="Subject" value="NO subject"></td></td>
-         </tr>
-       </table>
-       <label>Message:-<textarea name="message" rows="5" cols="100" required></textarea> </label>
-       <br>
-         <input type="submit"  value="Send">
-           </form>
- </center>
+       <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <br>
+             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">MAIL ME:-</button>
+           </div>
+         </div>
+         <hr color="white">
+     <div  id="myModal" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+         <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">MAIL ME:-</h4>
+        </div>
+         <div class="modal-body">
+             SUBJECT:-
+                 <input type="text" name="subject" placeholder="SUBJECT"></td>
+             MESSAGE:-
+                <textarea name="message" rows="3" cols="100"></textarea>
+         </div>
+       </div>
+
+     </div>
+  </center>
    </div>
        <div class="media-handles">
       <a href="https://www.facebook.com/Itssid523" target="_blank"><img src="images/facebook.png" alt="facebook" width="100"></a>
@@ -59,5 +73,8 @@
       <a href="https://github.com/Sudhanshugupta523" target="_blank"><img src="images/github.png" alt="github" width="100"></a>
     </div>
   </div>
-  </body>
+</div>
+</div>
+</div>
+</body>
 </html>

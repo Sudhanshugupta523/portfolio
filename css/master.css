@@ -1,6 +1,9 @@
 body{
       background-image: url('../images/background.jpg');
     }
+.active{
+  color: blue;
+}
 .content{
                   color: white;
                   text-align: center;
