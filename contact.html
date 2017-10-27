@@ -5,13 +5,12 @@
     <link rel="icon" href="images/favicon.ico">
       <link href="css/master.css" type="text/css" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="script/master.js" charset="utf-8"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--FONT AWESOME FOR NAVBAR ICONS-->
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"><!--DEVICON FOR ALL ICONS EXCEPT NAVBAR-->
-      <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-transition.js"></script>
-      <style media="screen">
+          <style media="screen">
       .content{
         font-size: 10px;
         opacity: 0.5;
@@ -36,45 +35,25 @@
 
       <div class="navbar" id="mynavbar">
         <a href="index.html"><i class="fa fa-home" ></i> Home</a>
-        <a  href="skill.html"><i class="fa fa-user"></i> Skills</a>
-        <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+        <a  href="skills.html"><i class="fa fa-user"></i> Skills</a>
+        <a href="contact.html" class="active"><i class="fa fa-address-book"></i> Contact</a>
         <a href="projects.html"><i class="fa fa-tasks"></i> Projects</a>
      </div>
    </header><br />
    <div class="content">
-     <div class="mailcontact">
-       <div class="row">
-        <div class="col-xs-12 col-md-12">
-          <br>
-             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">MAIL ME:-</button>
-           </div>
-         </div>
+            <br>
+             <button type="button" class="btn btn-info btn-lg" data-target="#alert" onclick="alert("hello")">MAIL ME AT:-</button>
+             <div class="alert">
+               <h6>MAIL ID:-sudhanshu523.sg@gmail.com</h6>
+             </div>
          <hr color="white">
-     <div  id="myModal" class="modal fade" role="dialog">
-       <div class="modal-dialog">
-         <div class="modal-header">
-                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">MAIL ME:-</h4>
-        </div>
-         <div class="modal-body">
-             SUBJECT:-
-                 <input type="text" name="subject" placeholder="SUBJECT"></td>
-             MESSAGE:-
-                <textarea name="message" rows="3" cols="100"></textarea>
-         </div>
-       </div>
 
-     </div>
   </center>
-   </div>
        <div class="media-handles">
       <a href="https://www.facebook.com/Itssid523" target="_blank"><img src="images/facebook.png" alt="facebook" width="100"></a>
       <a href="https://www.instagram.com/gupta.sudhanshu/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram" width="100"></a>
       <a href="https://github.com/Sudhanshugupta523" target="_blank"><img src="images/github.png" alt="github" width="100"></a>
     </div>
   </div>
-</div>
-</div>
-</div>
 </body>
 </html>

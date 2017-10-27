@@ -1,0 +1,4 @@
+function mail()
+{
+alert("hello");
+}

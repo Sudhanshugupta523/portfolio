@@ -1,9 +1,8 @@
 body{
       background-image: url('../images/background.jpg');
     }
-.active{
-  color: blue;
-}
+
+
 .content{
                   color: white;
                   text-align: center;
@@ -61,4 +60,7 @@ background-color: blue
 }
 .mediahandle{
   font-size: 5rem;
+}
+.active{
+  color: #99bbff;
 }
